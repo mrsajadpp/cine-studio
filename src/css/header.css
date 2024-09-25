@@ -14,3 +14,40 @@ header {
 header img {
     width: 160px;
 }
+
+.searchBar {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.searchBar .inputBox {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.searchBar .inputBox input {
+    width: calc(100% - 50px);
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.searchBar .inputBox button {
+    width: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
