@@ -28,7 +28,6 @@
             width: 100%;
             max-width: 960px;
             height: 50px;
-            background-color: white;
             text-align: center;
             margin-bottom: 10px;
         }
@@ -68,10 +67,58 @@
 
     <!-- Video Player Container -->
     <div class="video-container">
-        <video controls>
-            <source src="../../../src/video/death-note/01 - Rebirth.mkv" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+
+
+        <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+        <video id="video-id">
+            <source src="https://drive.google.com/uc?export=download&id=1M1a-T5nbVvlkMw6YiU7e4eNRz4mmav9r" type="video/mp4" />
+            <script>
+                var myFP = fluidPlayer(
+                    'video-id', {
+                    "layoutControls": {
+                        "controlBar": {
+                            "autoHideTimeout": 3,
+                            "animated": true,
+                            "autoHide": true
+                        },
+                        "htmlOnPauseBlock": {
+                            "html": null,
+                            "height": null,
+                            "width": null
+                        },
+                        "autoPlay": true,
+                        "mute": true,
+                        "allowTheatre": true,
+                        "playPauseAnimation": true,
+                        "playbackRateEnabled": false,
+                        "allowDownload": false,
+                        "playButtonShowing": true,
+                        "fillToContainer": false,
+                        "posterImage": ""
+                    },
+                    "vastOptions": {
+                        "adList": [
+                            {
+                                "roll": "preRoll",
+                                "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=2108bae622824b1ecad513802f21f657",
+                                "adText": ""
+                            },
+                            {
+                                "roll": "midRoll",
+                                "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=2108bae622824b1ecad513802f21f657",
+                                "adText": ""
+                            },
+                            {
+                                "roll": "postRoll",
+                                "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=2108bae622824b1ecad513802f21f657",
+                                "adText": ""
+                            }
+                        ],
+                        "adCTAText": false,
+                        "adCTATextPosition": ""
+                    }
+                });
+            </script>
     </div>
 
     <!-- Advertisement Banner Fixed Above the Video -->
