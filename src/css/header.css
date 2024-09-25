@@ -1,0 +1,15 @@
+header {
+    width: 100vw;
+    height: 70px;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 160px;
+}
