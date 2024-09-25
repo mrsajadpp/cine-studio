@@ -1,4 +1,4 @@
 User-agent: *
 Allow: *
 Disallow: 
-Sitemap: https://cine-studio.vercel.app/sitemap.xml
+Sitemap: https://www.cinecast.xyz/sitemap.xml
