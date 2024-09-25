@@ -1,6 +1,6 @@
 // Sample array of anime objects
 const animeList = [
-    { name: "Death Note", link: "./anime/death-note/index.html", image: "./src/img/thumbnail/death-note.webp" },
+    { name: "Death Note", link: "http://cine-studio.vercel.app/anime/death-note/index.html", image: "http://cine-studio.vercel.app/src/img/thumbnail/death-note.webp" },
 ];
 
 // Function to search for anime by name
