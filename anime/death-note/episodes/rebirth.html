@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Video Player</title>
+    <title>Responsive Video Player with Fixed Advertisement Banner</title>
     <style>
         * {
             margin: 0;
@@ -20,46 +20,72 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Ad banner container */
+        .ad-banner {
+            width: 100%;
+            max-width: 960px;
+            height: 50px;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         /* Video container for responsive scaling */
         .video-container {
             width: 100%;
             max-width: 960px;
-            /* Adjust the max width as needed */
             aspect-ratio: 16 / 9;
             background-color: black;
-            /* Background for when video isn't loaded */
             overflow: hidden;
-            position: relative;
         }
 
         video {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Makes sure video fills the container while maintaining aspect ratio */
         }
     </style>
 </head>
 
 <body>
 
-    <div class="video-container">
+    <!-- Advertisement Banner Fixed Above the Video -->
+    <div class="ad-banner">
         <script type="text/javascript">
             atOptions = {
-                'key' : '0791eaedef2e8997fc7d5d2d909cb649',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
+                'key': '0791eaedef2e8997fc7d5d2d909cb649',
+                'format': 'iframe',
+                'height': 50,
+                'width': 320,
+                'params': {}
             };
         </script>
         <script type="text/javascript" src="//listenerhooter.com/0791eaedef2e8997fc7d5d2d909cb649/invoke.js"></script>
+    </div>
+
+    <!-- Video Player Container -->
+    <div class="video-container">
         <video controls>
             <source src="../../../src/video/death-note/01 - Rebirth.mkv" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+    </div>
+
+    <!-- Advertisement Banner Fixed Above the Video -->
+    <div class="ad-banner" style="margin-top: 10px;">
+        <script type="text/javascript">
+            atOptions = {
+                'key': '0791eaedef2e8997fc7d5d2d909cb649',
+                'format': 'iframe',
+                'height': 50,
+                'width': 320,
+                'params': {}
+            };
+        </script>
+        <script type="text/javascript" src="//listenerhooter.com/0791eaedef2e8997fc7d5d2d909cb649/invoke.js"></script>
     </div>
 
 </body>
